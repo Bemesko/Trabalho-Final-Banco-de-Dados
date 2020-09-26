@@ -1,14 +1,14 @@
-CREATE TABLE IF NOT EXISTS (jogadores) (
-	jog_ID int not null auto_increment,
+CREATE TABLE IF NOT EXISTS jogadores (
+	jog_id int not null auto_increment,
 	jog_nome VARCHAR(50),
 	jog_senha VARCHAR(50),
 	jog_xp int,
 	jog_horas int,
 	jog_chicletes int,
-	jog_pontuação int
+	jog_pontuação int,
 	fk_classe_id int,
 	fk_turminha_id int,
-  primary key (id_cliente)
+  primary key (jog_id)
 );
 
 CREATE TABLE IF NOT EXISTS armas (
@@ -47,10 +47,10 @@ CREATE TABLE IF NOT EXISTS arsenal (
 	fk_arma_id int
 );
 
-ALTER TABLE jogador ADD CONSTRAINT jogador_classe
+ALTER TABLE jogadores ADD CONSTRAINT jogador_classe
 	FOREIGN KEY (fk_classe_id) REFERENCES classes(cla_id);
 
-ALTER TABLE jogador ADD CONSTRAINT jogador_turminha
+ALTER TABLE jogadores ADD CONSTRAINT jogador_turminha
 	FOREIGN KEY (fk_turminha_id) REFERENCES turminhas(tur_id);
 
     ALTER TABLE arsenal ADD CONSTRAINT arsenal_jogador
@@ -60,7 +60,7 @@ ALTER TABLE arsenal ADD CONSTRAINT arsenal_arma
 	FOREIGN KEY (fk_arma_id) REFERENCES armas(arm_id);
 
 INSERT INTO armas VALUES 
-(1,"varinha",20,"distância",10,20,2,),
+(1,"varinha",20,"distância",10,20,2),
 (2,"espada grande",15,"corpo a corpo",10,7,15),
 (3,"adaga",6,"corpo a corpo",8,3,4),
 (5,"arco e flecha",13,"distância",8,12,8),
