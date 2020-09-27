@@ -21,4 +21,4 @@ Ao entrar no jogo e criar seu personagem, o jogador precisará escolher uma clas
 
 ### Armas
 
-Por fim, o jogador poderá ter uma variedade de armas. Cada arma terá dados como seu nome, seu número de identificação, a quantidade de dano que ela causa, seu tipo (para poder separar armas de combate à distância de armas de combate de proximidade), e as velocidades de ataque e carregamento. Um jogador não irá possuir uma arma no começo do jogo, mas ao longo do tempo poderá colecionar quantas armas quiser. Da mesma forma, uma arma poderá ter vários donos ou nenhum.
+Por fim, o jogador poderá ter uma variedade de armas. Cada arma terá dados como seu nome, seu número de identificação, a quantidade de dano que ela causa, seu tipo (para poder separar armas de combate à distância de armas de combate de proximidade), as velocidades de ataque e carregamento e seu peso. Um jogador não irá possuir uma arma no começo do jogo, mas ao longo do tempo poderá colecionar quantas armas quiser. Da mesma forma, uma arma poderá ter vários donos ou nenhum.
